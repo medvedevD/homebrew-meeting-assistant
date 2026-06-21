@@ -5,14 +5,16 @@
 # paid Apple Developer ID — see packaging/macos/HOMEBREW-SUNSET.md). The
 # postflight strips com.apple.quarantine so Gatekeeper does not wall off the app
 # on a clean machine. Lives in a SELF-HOSTED tap (homebrew/cask will not accept
-# an un-notarized cask):
+# an un-notarized cask). Install (Homebrew 6+ asks you to `brew trust` it once,
+# because the postflight runs a command to strip the quarantine flag):
 #
-#   brew install --cask medvedevD/meeting-assistant/meeting-assistant
+#   brew tap medvedevd/meeting-assistant
+#   brew install --cask meeting-assistant
 cask "meeting-assistant" do
-  version "0.1.0-alpha.7"
-  sha256 "8c24619a82a70d3f54fa0db8638185461d7ea1e9816717144cf487b4ff82b641"
+  version "0.1.0-alpha.8"
+  sha256 "0b4c9a4a65c6e6337abf68b230aa401ca56e187c4fbfaff5e47cd30880611fde"
 
-  url "https://github.com/medvedevD/meeting-assistant/releases/download/v0.1.0-alpha.7/MeetingAssistant-0.1.0.dmg",
+  url "https://github.com/medvedevD/meeting-assistant/releases/download/v0.1.0-alpha.8/MeetingAssistant-0.1.0.dmg",
       verified: "github.com/medvedevD/meeting-assistant/"
   name "Meeting Assistant"
   desc "Record, transcribe, and generate meeting protocols"
