@@ -11,10 +11,10 @@
 #   brew tap medvedevd/meeting-assistant
 #   brew install --cask meeting-assistant
 cask "meeting-assistant" do
-  version "0.1.0-alpha.13"
-  sha256 "976e81bda8026c99b15fb856875cfff909d7cb3c20a51dad35646001309a9df1"
+  version "0.1.0-alpha.14"
+  sha256 "1c621b7d2c10cea9c20b9e860acffb3457c454c34f00aa2e40002e0d5f16b70a"
 
-  url "https://github.com/medvedevD/meeting-assistant/releases/download/v0.1.0-alpha.13/MeetingAssistant-0.1.0.dmg",
+  url "https://github.com/medvedevD/meeting-assistant/releases/download/v0.1.0-alpha.14/MeetingAssistant-0.1.0.dmg",
       verified: "github.com/medvedevD/meeting-assistant/"
   name "Meeting Assistant"
   desc "Record, transcribe, and generate meeting protocols"
